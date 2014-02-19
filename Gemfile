@@ -71,3 +71,6 @@ end
   # default is true; if you change it to false, comment out the line below
   # gem 'recaptcha', :require => "recaptcha/rails"
 
+
+gem "recaptcha", require: "recaptcha/rails"
+gem "activerecord-session_store", github: "rails/activerecord-session_store"
