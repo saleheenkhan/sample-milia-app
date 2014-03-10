@@ -1,7 +1,7 @@
 SampleMiliaApp::Application.configure do
    
   # devise says to define default url
-  config.action_mailer.default_url_options = { :host => 'secure.simple-milia-app.com', :protocol => 'https' }
+  config.action_mailer.default_url_options = { :host => 'simple-milia.herokuapp.com' }
 
   ActionMailer::Base.delivery_method = :smtp
 
