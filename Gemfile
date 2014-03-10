@@ -4,8 +4,11 @@ ruby "2.0.0"   # heroku likes this at the head, as line 2
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.3'
 
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# Use sqlite3 as the dev/test database for Active Record
+gem 'sqlite3', :group => [:development, :test]
+
+# Use pg as the production database for heroku
+gem 'pg', :group => :production
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -61,7 +64,7 @@ end
 
   gem 'web-app-theme', :git => 'git://github.com/dsaronin/web-app-theme.git'
   gem 'devise', '~>3.2'
-  gem 'milia', :git => 'git://github.com/dsaronin/milia.git', :branch => 'v1.0.0-beta-7'
+  gem 'milia', '~>1.0'
 
   # airbrake is optional and configured by config.use_airbrake in milia initializer
   # default is false; if you change it to true, uncomment out the line below

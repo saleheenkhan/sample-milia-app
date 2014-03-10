@@ -1,13 +1,4 @@
 GIT
-  remote: git://github.com/dsaronin/milia.git
-  revision: 43eec9596b21062afcbf4d311e1ce2db3df72f9a
-  branch: v1.0.0-beta-7
-  specs:
-    milia (1.0.0)
-      devise (~> 3.2)
-      rails (~> 4.0)
-
-GIT
   remote: git://github.com/dsaronin/web-app-theme.git
   revision: 680288c94324fe755c078895cbe9ac8e4f5e8ea1
   specs:
@@ -103,6 +94,9 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    milia (1.0.0)
+      devise (~> 3.2)
+      rails (~> 4.0)
     mime-types (1.25.1)
     mini_portile (0.5.2)
     minitest (4.7.5)
@@ -110,6 +104,7 @@ GEM
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
     orm_adapter (0.5.0)
+    pg (0.17.1)
     polyglot (0.3.4)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -192,7 +187,8 @@ DEPENDENCIES
   html2haml!
   jbuilder (~> 1.2)
   jquery-rails
-  milia!
+  milia (~> 1.0)
+  pg
   rack-timeout
   rails (= 4.0.3)
   rails_12factor
