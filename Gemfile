@@ -64,7 +64,7 @@ end
 
   gem 'web-app-theme', :git => 'git://github.com/dsaronin/web-app-theme.git'
   gem 'devise', '~>3.2'
-  gem 'milia', '~>1.0'
+  gem 'milia', :git => 'git://github.com/dsaronin/milia.git', :branch => 'v1.0.1'
 
   # airbrake is optional and configured by config.use_airbrake in milia initializer
   # default is false; if you change it to true, uncomment out the line below
